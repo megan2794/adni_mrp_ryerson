@@ -1,0 +1,7 @@
+---
+studydata:                  'Final_ADNI.csv'
+studydatafinal:             'Label.csv'
+adnimerge:                  'ADNIMERGE.csv'
+featuregroupings_adnimerge: 'FeatureGroupingsADNIMERGE.csv'
+adniall:                    'DXSUM_PDXCONV_ADNIALL.csv'
+featuregroupings_adniall:   'FeatureGroupingsADNIALL.csv'

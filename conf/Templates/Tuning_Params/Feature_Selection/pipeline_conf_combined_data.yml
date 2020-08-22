@@ -1,0 +1,87 @@
+---
+Full_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['30']
+  folds: '3'
+Full_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['40']
+  folds: '3'
+Full_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['46']
+  folds: '3'
+Full_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['47']
+  folds: '3'
+
+Imaging_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['6']
+  folds: '3'
+Imaging_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['7']
+  folds: '3'
+Imaging_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['8']
+  folds: '3'
+Imaging_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['9']
+  folds: '3'
+
+NonImaging_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['35']
+  folds: '3'
+NonImaging_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['36']
+  folds: '3'
+NonImaging_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['37']
+  folds: '3'
+NonImaging_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  n_components: ['38']
+  folds: '3'

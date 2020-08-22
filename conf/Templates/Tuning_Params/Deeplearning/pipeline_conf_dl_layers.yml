@@ -1,0 +1,208 @@
+P1_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['mri']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P2_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P3_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P4_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P5_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P6_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['imaging']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P7_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P8_multilayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['32','relu'],['5','softmax']]
+  dropouts: ['0.1','0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P1_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['mri']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P2_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P3_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P4_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P5_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P6_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['imaging']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P7_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'
+P8_singlelayer:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['32','relu'],['5','softmax']]
+  dropouts: ['0.1', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '5'

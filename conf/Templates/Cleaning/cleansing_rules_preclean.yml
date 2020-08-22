@@ -1,0 +1,289 @@
+---
+fluid_biomarkers:
+  ABETA:
+      nullVals: ['-1', '-4', 'None']
+      nullHandling: 'none'
+      replaceVals: [['>1700', '1700']]
+      fieldType: 'float'
+  ABETA_bl:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'none'
+    replaceVals: [['>1700', '1700']]
+    fieldType: 'float'
+  PTAU:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'none'
+    replaceVals: [['<8', '8']]
+    fieldType: 'float'
+  PTAU_bl:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'none'
+    replaceVals: [['<8', '8']]
+    fieldType: 'float'
+  TAU:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'none'
+    fieldType: 'float'
+  TAU_bl:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'none'
+    fieldType: 'float'
+  APOE4:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'none'
+    fieldType: 'integer'
+sociodemographic:
+  age:
+    nullVals: ['None']
+    nullHandling: 'none'
+    fieldType: 'float'
+  ptgender:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['Male', '0'], ['Female','1']]
+    fieldType: 'integer'
+  pteducat:
+    nullVals: ['None']
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ptraccat:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['Unknown','0'], ['More than one','1'], ['White','2'], ['Hawaiian/Other PI','3'], ['Black','4'], ['Asian','5'], ['Am Indian/Alaskan','5']]
+    fieldType: 'integer'
+  ptethcat:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['Unknown', '0'], ['Not Hisp/Latino', '1'], ['Hisp/Latino','2']]
+    fieldType: 'integer'
+  ptmarry:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['Unknown', '0'], ['Never married', '1'], ['Married','2'], ['Divorced', '3'], ['Widowed', '4']]
+    fieldType: 'integer'
+pet:
+  FDG_bl:
+      nullHandling: 'none'
+      fieldType: 'float'
+  FDG:
+    nullHandling: 'none'
+    fieldType: 'float'
+  AV45:
+    nullHandling: 'none'
+    fieldType: 'float'
+  PIB:
+    nullHandling: 'none'
+    fieldType: 'float'
+  PIB_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+mri:
+  midtemp:
+      nullHandling: 'none'
+      fieldType: 'integer'
+      normalizeOtherFt: 'ICV'
+  ventricles:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV'
+  entorhinal:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV'
+  ventricles_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  hippocampus_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  fusiform_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  icv:
+    nullHandling: 'none'
+    fieldType: 'float'
+  icv_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  wholebrain_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  midtemp_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  wholebrain:
+    nullHandling: 'none'
+    fieldType: 'float'
+    normalizeOtherFt: 'ICV'
+  fldstreng:
+    drop: 'true'
+  entorhinal_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+    normalizeOtherFt: 'ICV_bl'
+  fusiform:
+    nullHandling: 'none'
+    fieldType: 'float'
+    normalizeOtherFt: 'ICV'
+  hippocampus:
+    nullHandling: 'none'
+    fieldType: 'float'
+    normalizeOtherFt: 'ICV'
+  fldstreng_bl:
+    drop: 'true'
+clinical:
+  ravlt_learning_bl:
+      nullHandling: 'none'
+      fieldType: 'integer'
+  ravlt_learning:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  mpacctrailsb_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  mpacctrailsb:
+    nullHandling: 'none'
+    fieldType: 'float'
+  adas13_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  adas13:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ravlt_immediate_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ravlt_immediate:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ecogptlang_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptlang:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptmem_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptmem:
+    nullHandling: 'none'
+    fieldType: 'float'
+  moca_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  moca:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ecogspvisspat_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogspvisspat:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptvisspat:
+    nullHandling: 'none'
+    fieldType: 'float'
+  adasQ4_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  adasQ4:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ecogsptotal_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogsptotal:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptplan_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptplan:
+    nullHandling: 'none'
+    fieldType: 'float'
+  adas11_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  adas11:
+    nullHandling: 'none'
+    fieldType: 'float'
+  faq_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  mmse_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  mmse:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ravlt_forgetting:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  mpaccdigit_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  mpaccdigit:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogpttotal_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogpttotal:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptdivatt_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptdivatt:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ldeltotal_bl:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ldeltotal:
+    nullHandling: 'none'
+    fieldType: 'integer'
+  ecogsplang_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogsplang:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogspmem_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogspmem:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogspdivatt:
+    nullHandling: 'none'
+    fieldType: 'float'
+  trabscor_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  trabscor:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptorgan_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogptorgan:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogspplan_bl:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogspplan:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ravlt_perc_forgetting:
+    nullHandling: 'none'
+    fieldType: 'float'
+  ecogsporgan:
+    nullHandling: 'none'
+    fieldType: 'float'

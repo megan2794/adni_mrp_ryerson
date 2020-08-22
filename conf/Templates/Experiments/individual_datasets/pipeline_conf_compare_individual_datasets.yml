@@ -1,0 +1,185 @@
+---
+# CLINICAL Deep Learning With Random Forest Feature Selection
+CLINICAL_DL:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['dl_1']
+  n_components: ['27']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# CLINICAL KNN With Univariate Feature Selection
+CLINICAL_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['knn_1']
+  n_components: ['27']
+  folds: '3'
+# FLUID Deep Learning With Relieff Feature Selection
+FLUID_DL:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['3']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# FLUID KNN With Random Forest Feature Selection
+FLUID_KNN:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['3']
+  folds: '3'
+# SOC DL With No Feature Selection
+SOC_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['6']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# SOC KNN With Information Gain Feature Selection
+SOC_KNN:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['5']
+  folds: '3'
+# MRI DL With No Feature Selection
+MRI_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['mri']
+  classifiers: ['dl_1']
+  n_components: ['7']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# MRI KNN With Univariate Feature Selection
+MRI_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['mri']
+  classifiers: ['knn_1']
+  n_components: ['6']
+  folds: '3'
+# PET DL With No Feature Selection
+PET_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['2']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# PET KNN With No Feature Selection
+PET_KNN:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['2']
+  folds: '3'
+# IMAGING DL With No Feature Selection
+IMAGING_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['imaging']
+  classifiers: ['dl_1']
+  n_components: ['9']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# IMAGING KNN With Random Forest Feature Selection
+IMAGING_KNN:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['imaging']
+  classifiers: ['knn_1']
+  n_components: ['8']
+  folds: '3'
+# NONIMAGING DL With Random Forest Feature Selection
+NONIMAGING_DL:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['dl_1']
+  n_components: ['37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# NONIMAGING KNN With Random Forest Feature Selection
+NONIMAGING_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['knn_1']
+  n_components: ['37']
+  folds: '3'
+# FULLDATA DL With Univariate Feature Selection
+FULLDATA_DL:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  n_components: ['46']
+  layers: [['128','relu'],['128','relu'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '10'
+  batch_size: '32'
+  folds: '3'
+# FULLDATA KNN With Information Gain Feature Selection
+FULLDATA_KNN:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'

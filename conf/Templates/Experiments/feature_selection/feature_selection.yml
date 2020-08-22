@@ -1,0 +1,368 @@
+
+Traditional_Pipeline_1:
+  feature_selection: ['none','none','none']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['47','9', '38']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIA:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIB:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['44','7', '35']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIC:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['42','6', '33']
+  folds: '3'
+
+Traditional_Pipeline_1_UNID:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['40','5', '30']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIE:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['35','4', '25']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIF:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['30','3', '20']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIG:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['20','2', '15']
+  folds: '3'
+
+Traditional_Pipeline_1_UNIH:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['15','1', '10']
+  folds: '3'
+
+Traditional_Pipeline_1_UNII:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['5','1', '5']
+  folds: '3'
+
+Traditional_Pipeline_1_RFA:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Traditional_Pipeline_1_RFB:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['44','7', '35']
+  folds: '3'
+
+Traditional_Pipeline_1_RFC:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['42','6', '33']
+  folds: '3'
+
+Traditional_Pipeline_1_RFD:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['40','5', '30']
+  folds: '3'
+
+Traditional_Pipeline_1_RFE:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['35','4', '25']
+  folds: '3'
+
+Traditional_Pipeline_1_RFF:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['30','3', '20']
+  folds: '3'
+
+Traditional_Pipeline_1_RFG:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['20','2', '15']
+  folds: '3'
+
+Traditional_Pipeline_1_RFH:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['15','1', '10']
+  folds: '3'
+
+Traditional_Pipeline_1_RFI:
+  feature_selection: ['rf','rf','rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['5','1', '5']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffA:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffB:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['44','7', '35']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffC:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['42','6', '33']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffD:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['40','5', '30']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffE:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['35','4', '25']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffF:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['30','3', '20']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffG:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['20','2', '15']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffH:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['15','1', '10']
+  folds: '3'
+
+Traditional_Pipeline_1_RelieffI:
+  feature_selection: ['relieff','relieff','relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['5','1', '5']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRA:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRB:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['44','7', '35']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRC:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['42','6', '33']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRD:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['40','5', '30']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRE:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['35','4', '25']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRF:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['30','3', '20']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRG:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['20','2', '15']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRH:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['15','1', '10']
+  folds: '3'
+
+Traditional_Pipeline_1_MRMRI:
+  feature_selection: ['mrmr','mrmr','mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['5','1', '5']
+  folds: '3'
+
+Traditional_Pipeline_1_IGA:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Traditional_Pipeline_1_IGB:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['44','7', '35']
+  folds: '3'
+
+Traditional_Pipeline_1_IGC:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['42','6', '33']
+  folds: '3'
+
+Traditional_Pipeline_1_IGD:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['40','5', '30']
+  folds: '3'
+
+Traditional_Pipeline_1_IGE:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['35','4', '25']
+  folds: '3'
+
+Traditional_Pipeline_1_IGF:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['30','3', '20']
+  folds: '3'
+
+Traditional_Pipeline_1_IGG:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['20','2', '15']
+  folds: '3'
+
+Traditional_Pipeline_1_IGH:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['15','1', '10']
+  folds: '3'
+
+Traditional_Pipeline_1_IGI:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['5','1', '5']
+  folds: '3'

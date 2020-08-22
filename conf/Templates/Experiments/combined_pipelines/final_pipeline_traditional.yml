@@ -1,0 +1,75 @@
+
+Traditional_Pipeline_1:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+Traditional_Pipeline_2:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data', 'full_data']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','46', '46']
+  folds: '3'
+
+# Compare results with TOP individual traditional classifiers
+NONIMAGING_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['knn_1']
+  n_components: ['37']
+  folds: '3'
+FULLDATA_KNN:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'
+CLINICAL_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['knn_1']
+  n_components: ['27']
+  folds: '3'
+
+# Compare results with individual traditional classifiers included in pipelines
+FULLDATA_KNN_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'
+FULLDATA_XGB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'
+FULLDATA_SVC_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'
+IMAGING_XGB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging']
+  classifiers: ['xgb_1']
+  n_components: ['8']
+  folds: '3'
+NONIMAGING_SVC_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['svc_1']
+  n_components: ['37']
+  folds: '3'

@@ -1,0 +1,264 @@
+---
+# SOC With Random Forest Feature Selection
+SOC_DL_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['5']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+SOC_KNN_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['5']
+  folds: '3'
+SOC_XGB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_NB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['nb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_SVC_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['svc_1']
+  n_components: ['5']
+  folds: '3'
+
+# SOC With Information Gain Feature Selection
+SOC_DL_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['5']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+SOC_KNN_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['5']
+  folds: '3'
+SOC_XGB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_NB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['nb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_SVC_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['svc_1']
+  n_components: ['5']
+  folds: '3'
+
+# SOC With Relieff Feature Selection
+SOC_DL_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['5']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+SOC_KNN_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['5']
+  folds: '3'
+SOC_XGB_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_NB_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['nb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_SVC_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['svc_1']
+  n_components: ['5']
+  folds: '3'
+
+# SOC With MRMR Feature Selection
+SOC_DL_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['5']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+SOC_KNN_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['5']
+  folds: '3'
+SOC_XGB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_NB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['nb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_SVC_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['svc_1']
+  n_components: ['5']
+  folds: '3'
+
+# SOC With Univariate Feature Selection
+SOC_DL_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['5']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+SOC_KNN_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['5']
+  folds: '3'
+SOC_XGB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_NB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['nb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_SVC_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['svc_1']
+  n_components: ['5']
+  folds: '3'
+
+# SOC With No Feature Selection
+SOC_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['dl_1']
+  n_components: ['6']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+SOC_KNN:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['knn_1']
+  n_components: ['6']
+  folds: '3'
+SOC_XGB:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['6']
+  folds: '3'
+SOC_NB:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['nb_1']
+  n_components: ['6']
+  folds: '3'
+SOC_SVC:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['svc_1']
+  n_components: ['6']
+  folds: '3'

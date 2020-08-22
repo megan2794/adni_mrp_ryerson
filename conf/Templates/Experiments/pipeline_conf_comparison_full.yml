@@ -1,0 +1,1616 @@
+---
+# Pipeline 1: Features Trained Independently
+# Deep Learning
+P1_DL_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_DL_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_DL_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_DL_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_DL_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_DL_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+# Traditional
+P1_Trad_KNN_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  folds: '3'
+P1_Trad_XGB_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['xgb_1', 'xgb_2', 'xgb_3', 'xgb_4', 'xgb_5']
+  folds: '3'
+P1_Trad_NB_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['nb_1', 'nb_2', 'nb_3', 'nb_4', 'nb_5']
+  folds: '3'
+P1_Trad_SVC_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['svc_1', 'svc_2', 'svc_3', 'svc_4', 'svc_5']
+  folds: '3'
+P1_Trad_KNN_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  folds: '3'
+P1_Trad_XGB_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['xgb_1', 'xgb_2', 'xgb_3', 'xgb_4', 'xgb_5']
+  folds: '3'
+P1_Trad_NB_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['nb_1', 'nb_2', 'nb_3', 'nb_4', 'nb_5']
+  folds: '3'
+P1_Trad_SVC_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['svc_1', 'svc_2', 'svc_3', 'svc_4', 'svc_5']
+  folds: '3'
+P1_Trad_KNN_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  folds: '3'
+P1_Trad_XGB_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['xgb_1', 'xgb_2', 'xgb_3', 'xgb_4', 'xgb_5']
+  folds: '3'
+P1_Trad_NB_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['nb_1', 'nb_2', 'nb_3', 'nb_4', 'nb_5']
+  folds: '3'
+P1_Trad_SVC_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['svc_1', 'svc_2', 'svc_3', 'svc_4', 'svc_5']
+  folds: '3'
+P1_Trad_KNN_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  folds: '3'
+P1_Trad_XGB_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['xgb_1', 'xgb_2', 'xgb_3', 'xgb_4', 'xgb_5']
+  folds: '3'
+P1_Trad_NB_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['nb_1', 'nb_2', 'nb_3', 'nb_4', 'nb_5']
+  folds: '3'
+P1_Trad_SVC_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['svc_1', 'svc_2', 'svc_3', 'svc_4', 'svc_5']
+  folds: '3'
+P1_Trad_Uni:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  folds: '3'
+P1_Trad_XGB_Uni:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['xgb_1', 'xgb_2', 'xgb_3', 'xgb_4', 'xgb_5']
+  folds: '3'
+P1_Trad_NB_Uni:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['nb_1', 'nb_2', 'nb_3', 'nb_4', 'nb_5']
+  folds: '3'
+P1_Trad_SVC_Uni:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['svc_1', 'svc_2', 'svc_3', 'svc_4', 'svc_5']
+  folds: '3'
+P1_Trad_KNN_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  folds: '3'
+P1_Trad_XGB_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['xgb_1', 'xgb_2', 'xgb_3', 'xgb_4', 'xgb_5']
+  folds: '3'
+P1_Trad_NB_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['nb_1', 'nb_2', 'nb_3', 'nb_4', 'nb_5']
+  folds: '3'
+P1_Trad_SVC_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['svc_1', 'svc_2', 'svc_3', 'svc_4', 'svc_5']
+  folds: '3'
+# Hybrid
+P1_Hybrid_KNN_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2', 'dl_3', 'knn_3', 'dl_4', 'knn_4', 'dl_5', 'knn_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_XGB_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2', 'dl_3', 'xgb_3', 'dl_4', 'xgb_4', 'dl_5', 'xgb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_NB_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2', 'dl_3', 'nb_3', 'dl_4', 'nb_4', 'dl_5', 'nb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_SVC_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2', 'dl_3', 'svc_3', 'dl_4', 'svc_4', 'dl_5', 'svc_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_KNN_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2', 'dl_3', 'knn_3', 'dl_4', 'knn_4', 'dl_5', 'knn_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_XGB_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2', 'dl_3', 'xgb_3', 'dl_4', 'xgb_4', 'dl_5', 'xgb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_NB_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2', 'dl_3', 'nb_3', 'dl_4', 'nb_4', 'dl_5', 'nb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_SVC_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2', 'dl_3', 'svc_3', 'dl_4', 'svc_4', 'dl_5', 'svc_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_KNN_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2', 'dl_3', 'knn_3', 'dl_4', 'knn_4', 'dl_5', 'knn_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_XGB_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2', 'dl_3', 'xgb_3', 'dl_4', 'xgb_4', 'dl_5', 'xgb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_NB_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2', 'dl_3', 'nb_3', 'dl_4', 'nb_4', 'dl_5', 'nb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_SVC_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2', 'dl_3', 'svc_3', 'dl_4', 'svc_4', 'dl_5', 'svc_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_KNN_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2', 'dl_3', 'knn_3', 'dl_4', 'knn_4', 'dl_5', 'knn_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_XGB_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2', 'dl_3', 'xgb_3', 'dl_4', 'xgb_4', 'dl_5', 'xgb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_NB_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2', 'dl_3', 'nb_3', 'dl_4', 'nb_4', 'dl_5', 'nb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_SVC_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2', 'dl_3', 'svc_3', 'dl_4', 'svc_4', 'dl_5', 'svc_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_KNN_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2', 'dl_3', 'knn_3', 'dl_4', 'knn_4', 'dl_5', 'knn_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_XGB_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2', 'dl_3', 'xgb_3', 'dl_4', 'xgb_4', 'dl_5', 'xgb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_NB_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2', 'dl_3', 'nb_3', 'dl_4', 'nb_4', 'dl_5', 'nb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_SVC_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2', 'dl_3', 'svc_3', 'dl_4', 'svc_4', 'dl_5', 'svc_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_KNN_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2', 'dl_3', 'knn_3', 'dl_4', 'knn_4', 'dl_5', 'knn_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_XGB_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2', 'dl_3', 'xgb_3', 'dl_4', 'xgb_4', 'dl_5', 'xgb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_NB_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2', 'dl_3', 'nb_3', 'dl_4', 'nb_4', 'dl_5', 'nb_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_SVC_None:
+  feature_selection: ['none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'mri', 'pet', 'pet', 'fluid', 'fluid', 'clinical', 'clinical', 'sociodemographic', 'sociodemographic']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2', 'dl_3', 'svc_3', 'dl_4', 'svc_4', 'dl_5', 'svc_5']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+# Pipeline 2: Features Grouped by Imaging and Non-Imaging
+# Deep Learning
+P2_DL_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_DL_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_DL_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_DL_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_DL_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_DL_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+# Traditional
+P2_Trad_KNN_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  folds: '3'
+P2_Trad_XGB_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['xgb_1', 'xgb_2']
+  folds: '3'
+P2_Trad_NB_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['nb_1', 'nb_2']
+  folds: '3'
+P2_Trad_SVC_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['svc_1', 'svc_2']
+  folds: '3'
+P2_Trad_KNN_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  folds: '3'
+P2_Trad_XGB_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['xgb_1', 'xgb_2']
+  folds: '3'
+P2_Trad_NB_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['nb_1', 'nb_2']
+  folds: '3'
+P2_Trad_SVC_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['svc_1', 'svc_2']
+  folds: '3'
+P2_Trad_KNN_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  folds: '3'
+P2_Trad_XGB_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['xgb_1', 'xgb_2']
+  folds: '3'
+P2_Trad_NB_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['nb_1', 'nb_2']
+  folds: '3'
+P2_Trad_SVC_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['svc_1', 'svc_2']
+  folds: '3'
+P2_Trad_KNN_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  folds: '3'
+P2_Trad_XGB_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['xgb_1', 'xgb_2']
+  folds: '3'
+P2_Trad_NB_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['nb_1', 'nb_2']
+  folds: '3'
+P2_Trad_SVC_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['svc_1', 'svc_2']
+  folds: '3'
+P2_Trad_KNN_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  folds: '3'
+P2_Trad_XGB_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['xgb_1', 'xgb_2']
+  folds: '3'
+P2_Trad_NB_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['nb_1', 'nb_2']
+  folds: '3'
+P2_Trad_SVC_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['svc_1', 'svc_2']
+  folds: '3'
+P2_Trad_KNN_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  folds: '3'
+P2_Trad_XGB_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['xgb_1', 'xgb_2']
+  folds: '3'
+P2_Trad_NB_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['nb_1', 'nb_2']
+  folds: '3'
+P2_Trad_SVC_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['svc_1', 'svc_2']
+  folds: '3'
+# Hybrid
+P2_Hybrid_KNN_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_XGB_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_NB_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_SVC_RF:
+  feature_selection: ['rf', 'rf', 'rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_KNN_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_XGB_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_NB_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_SVC_IG:
+  feature_selection: ['ig', 'ig', 'ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_KNN_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_XGB_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_NB_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_SVC_Relieff:
+  feature_selection: ['relieff', 'relieff', 'relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_KNN_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_XGB_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_NB_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_SVC_MRMR:
+  feature_selection: ['mrmr', 'mrmr', 'mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_KNN_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_XGB_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_NB_UNI:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_SVC_Uni:
+  feature_selection: ['univariate', 'univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_KNN_None:
+  feature_selection: ['none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'dl_2', 'knn_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_XGB_None:
+  feature_selection: ['none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'dl_2', 'xgb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_NB_None:
+  feature_selection: ['none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'nb_1', 'dl_2', 'nb_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_SVC_None:
+  feature_selection: ['none', 'none', 'none', 'none']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'imaging', 'non_imaging', 'non_imaging']
+  classifiers: ['dl_1', 'svc_1', 'dl_2', 'svc_2']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+
+# Pipeline 3: Features Trained Concurrently
+# Deep Learning
+P3_DL_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_DL_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_DL_Relieff:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_DL_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_DL_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_DL_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['dl_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+# Traditional
+P3_Trad_KNN_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  folds: '7'
+P3_Trad_XGB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  folds: '7'
+P3_Trad_NB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['nb_1']
+  folds: '7'
+P3_Trad_SVC_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['svc_1']
+  folds: '7'
+P3_Trad_KNN_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  folds: '7'
+P3_Trad_XGB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  folds: '7'
+P3_Trad_NB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['nb_1']
+  folds: '7'
+P3_Trad_SVC_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['svc_1']
+  folds: '7'
+P3_Trad_KNN_Relieff:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  folds: '7'
+P3_Trad_XGB_Relieff:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  folds: '7'
+P3_Trad_NB_Relieff:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['nb_1']
+  folds: '7'
+P3_Trad_SVC_Relieff:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['svc_1']
+  folds: '7'
+P3_Trad_KNN_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  folds: '7'
+P3_Trad_XGB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  folds: '7'
+P3_Trad_NB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['nb_1']
+  folds: '7'
+P3_Trad_SVC_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['svc_1']
+  folds: '7'
+P3_Trad_KNN_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  folds: '7'
+P3_Trad_XGB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  folds: '7'
+P3_Trad_NB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['nb_1']
+  folds: '7'
+P3_Trad_SVC_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['svc_1']
+  folds: '7'
+P3_Trad_KNN_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  folds: '7'
+P3_Trad_XGB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['xgb_1']
+  folds: '7'
+P3_Trad_NB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['nb_1']
+  folds: '7'
+P3_Trad_SVC_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['svc_1']
+  folds: '7'
+# Hybrid
+P3_Hybrid_KNN_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'knn_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_XGB_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'xgb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_NB_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'nb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_SVC_RF:
+  feature_selection: ['rf', 'rf']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'svc_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_KNN_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'knn_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_XGB_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'xgb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_NB_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'nb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_SVC_IG:
+  feature_selection: ['ig', 'ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'svc_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_KNN_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'knn_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_XGB_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'xgb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_NB_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'nb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_SVC_Relieff:
+  feature_selection: ['relieff', 'relieff']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'svc_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_KNN_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'knn_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_XGB_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'xgb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_NB_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'nb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_SVC_MRMR:
+  feature_selection: ['mrmr', 'mrmr']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'svc_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_KNN_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'knn_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_XGB_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'xgb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_NB_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'nb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_SVC_UNI:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'svc_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_KNN_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'knn_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_XGB_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'xgb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_NB_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'nb_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'
+P3_Hybrid_SVC_None:
+  feature_selection: ['none', 'none']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'full_data']
+  classifiers: ['dl_1', 'svc_1']
+  layers: [['64','relu'],['5','softmax']]
+  dropouts: ['0.1','0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '80'
+  batch_size: '32'
+  folds: '3'

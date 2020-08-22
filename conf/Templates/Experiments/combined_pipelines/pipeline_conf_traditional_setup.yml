@@ -1,0 +1,88 @@
+
+Traditional_All_Data_Mixed:
+  feature_selection: ['ig','none', 'ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'sociodemographic', 'clinical']
+  classifiers: ['knn_1', 'svc_1', 'nb_1', 'xgb_1', 'knn_2']
+  n_components: ['6', '2','3','5','27']
+  folds: '3'
+
+Traditional_All_Data_KNN:
+  feature_selection: ['ig','none', 'ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'sociodemographic', 'clinical']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  n_components: ['6', '2','3','5','27']
+  folds: '3'
+
+Traditional_All_Data_Enhanced_Mixed_1:
+  feature_selection: ['ig','ig','ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'fluid', 'clinical', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1', 'nb_1', 'knn_2']
+  n_components: ['6','3','27', '8', '37']
+  folds: '3'
+
+Traditional_All_Data_Enhanced_Mixed_2:
+  feature_selection: ['ig','ig','ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['mri', 'fluid', 'clinical', 'imaging', 'non_imaging', 'full_data']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1', 'nb_1', 'knn_2', 'xgb_2']
+  n_components: ['6','3','27', '8', '37', '46']
+  folds: '3'
+
+Traditional_Imaging_Non_Imaging_Mixed:
+  feature_selection: ['ig','ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1']
+  n_components: ['9', '38']
+  folds: '3'
+Traditional_Imaging_Non_Imaging_KNN:
+  feature_selection: ['ig','ig']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  n_components: ['8', '37']
+  folds: '3'
+
+Traditional_Full_Data_Mixed:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Traditional_Full_Data_KNN:
+  feature_selection: ['ig','ig','ig']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2', 'knn_3']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+# NONIMAGING KNN With Random Forest Feature Selection
+NONIMAGING_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['knn_1']
+  n_components: ['37']
+  folds: '3'
+# FULLDATA KNN With Information Gain Feature Selection
+FULLDATA_KNN:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'
+# CLINICAL KNN With Univariate Feature Selection
+CLINICAL_KNN:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['knn_1']
+  n_components: ['27']
+  folds: '3'

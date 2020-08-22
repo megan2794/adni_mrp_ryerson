@@ -1,0 +1,264 @@
+---
+# PET With Random Forest Feature Selection
+PET_DL_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['1']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+PET_KNN_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['1']
+  folds: '3'
+PET_XGB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+PET_NB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['nb_1']
+  n_components: ['1']
+  folds: '3'
+PET_SVC_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['svc_1']
+  n_components: ['1']
+  folds: '3'
+
+# PET With Information Gain Feature Selection
+PET_DL_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['1']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+PET_KNN_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['1']
+  folds: '3'
+PET_XGB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+PET_NB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['nb_1']
+  n_components: ['1']
+  folds: '3'
+PET_SVC_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['svc_1']
+  n_components: ['1']
+  folds: '3'
+
+# PET With Relieff Feature Selection
+PET_DL_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['1']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+PET_KNN_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['1']
+  folds: '3'
+PET_XGB_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+PET_NB_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['nb_1']
+  n_components: ['1']
+  folds: '3'
+PET_SVC_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['svc_1']
+  n_components: ['1']
+  folds: '3'
+
+# PET With MRMR Feature Selection
+PET_DL_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['1']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+PET_KNN_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['1']
+  folds: '3'
+PET_XGB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+PET_NB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['nb_1']
+  n_components: ['1']
+  folds: '3'
+PET_SVC_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['svc_1']
+  n_components: ['1']
+  folds: '3'
+
+# PET With Univariate Feature Selection
+PET_DL_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['1']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+PET_KNN_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['1']
+  folds: '3'
+PET_XGB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+PET_NB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['nb_1']
+  n_components: ['1']
+  folds: '3'
+PET_SVC_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['svc_1']
+  n_components: ['1']
+  folds: '3'
+
+# PET With No Feature Selection
+PET_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['dl_1']
+  n_components: ['2']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+PET_KNN:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['knn_1']
+  n_components: ['2']
+  folds: '3'
+PET_XGB:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['xgb_1']
+  n_components: ['2']
+  folds: '3'
+PET_NB:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['nb_1']
+  n_components: ['2']
+  folds: '3'
+PET_SVC:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['pet']
+  classifiers: ['svc_1']
+  n_components: ['2']
+  folds: '3'

@@ -1,0 +1,131 @@
+---
+CLINICAL_XGB_RF_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['7']
+  folds: '3'
+CLINICAL_XGB_RF_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['14']
+  folds: '3'
+CLINICAL_XGB_RF_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['21']
+  folds: '3'
+CLINICAL_XGB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['28']
+  folds: '3'
+
+MRI_XGB_RF_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['2']
+  folds: '3'
+MRI_XGB_RF_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['4']
+  folds: '3'
+MRI_XGB_RF_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+MRI_XGB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['7']
+  folds: '3'
+
+PET_XGB_RF_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+PET_XGB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['xgb_1']
+  n_components: ['2']
+  folds: '3'
+
+SOC_XGB_RF_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['2']
+  folds: '3'
+SOC_XGB_RF_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+SOC_XGB_RF_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['5']
+  folds: '3'
+SOC_XGB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['sociodemographic']
+  classifiers: ['xgb_1']
+  n_components: ['6']
+  folds: '3'
+
+FLUID_XGB_RF_S:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['1']
+  folds: '3'
+FLUID_XGB_RF_M:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['2']
+  folds: '3'
+FLUID_XGB_RF_L:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_XGB_None:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['4']
+  folds: '3'

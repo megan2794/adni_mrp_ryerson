@@ -1,0 +1,264 @@
+---
+# FLUID With Random Forest Feature Selection
+FLUID_DL_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['3']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+FLUID_KNN_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_XGB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_NB_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['nb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_SVC_RF:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['svc_1']
+  n_components: ['3']
+  folds: '3'
+
+# FLUID With Information Gain Feature Selection
+FLUID_DL_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['3']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+FLUID_KNN_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_XGB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_NB_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['nb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_SVC_IG:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['svc_1']
+  n_components: ['3']
+  folds: '3'
+
+# FLUID With Relieff Feature Selection
+FLUID_DL_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['3']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+FLUID_KNN_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_XGB_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_NB_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['nb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_SVC_RELIEFF:
+  feature_selection: ['relieff']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['svc_1']
+  n_components: ['3']
+  folds: '3'
+
+# FLUID With MRMR Feature Selection
+FLUID_DL_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['3']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+FLUID_KNN_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_XGB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_NB_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['nb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_SVC_MRMR:
+  feature_selection: ['mrmr']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['svc_1']
+  n_components: ['3']
+  folds: '3'
+
+# FLUID With Univariate Feature Selection
+FLUID_DL_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['3']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+FLUID_KNN_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_XGB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_NB_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['nb_1']
+  n_components: ['3']
+  folds: '3'
+FLUID_SVC_UNI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['svc_1']
+  n_components: ['3']
+  folds: '3'
+
+# FLUID With No Feature Selection
+FLUID_DL:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['dl_1']
+  n_components: ['4']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+FLUID_KNN:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['knn_1']
+  n_components: ['4']
+  folds: '3'
+FLUID_XGB:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['xgb_1']
+  n_components: ['4']
+  folds: '3'
+FLUID_NB:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['nb_1']
+  n_components: ['4']
+  folds: '3'
+FLUID_SVC:
+  feature_selection: ['none']
+  data_split: 'k-fold'
+  data_list: ['fluid']
+  classifiers: ['svc_1']
+  n_components: ['4']
+  folds: '3'

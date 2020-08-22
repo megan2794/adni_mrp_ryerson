@@ -1,0 +1,246 @@
+---
+fluid_biomarkers:
+  ABETA:
+    drop: 'true'
+  ABETA_bl:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'mean_imputation'
+    replaceVals: [['>1700', '1700']]
+    fieldType: 'float'
+  PTAU:
+    drop: 'true'
+  PTAU_bl:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'mean_imputation'
+    replaceVals: [['<8', '8']]
+    fieldType: 'float'
+  TAU:
+    drop: 'true'
+  TAU_bl:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  APOE4:
+    nullVals: ['-1', '-4', 'None']
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+sociodemographic:
+  age:
+    nullVals: ['None']
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ptgender:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['null','2'], ['Male', '0'], ['Female','1']]
+    fieldType: 'integer'
+  pteducat:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['null','11']]
+    fieldType: 'integer'
+  ptraccat:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['null','0'], ['Unknown','0'], ['More than one','1'], ['White','2'], ['Hawaiian/Other PI','3'], ['Black','4'], ['Asian','5'], ['Am Indian/Alaskan','5']]
+    fieldType: 'integer'
+  ptethcat:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['null','0'], ['Unknown', '0'], ['Not Hisp/Latino', '1'], ['Hisp/Latino','2']]
+    fieldType: 'integer'
+  ptmarry:
+    nullVals: ['None']
+    nullHandling: 'none'
+    replaceVals: [['null','0'], ['Unknown', '0'], ['Never married', '1'], ['Married','2'], ['Divorced', '3'], ['Widowed', '4']]
+    fieldType: 'integer'
+pet:
+  FDG_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  FDG:
+    drop: 'true'
+  AV45_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  AV45:
+    drop: 'true'
+  PIB:
+    drop: 'true'
+  PIB_bl:
+    drop: 'true'
+mri:
+  icv:
+    drop: 'true'
+  icv_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  midtemp:
+    drop: 'true'
+  ventricles:
+    drop: 'true'
+  entorhinal:
+    drop: 'true'
+  ventricles_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  hippocampus_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  fusiform_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  wholebrain_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  midtemp_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+    normalizeOtherFt: 'ICV_bl'
+  wholebrain:
+    drop: 'true'
+  fldstreng:
+    drop: 'true'
+  entorhinal_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+    normalizeOtherFt: 'ICV_bl'
+  fusiform:
+    drop: 'true'
+  hippocampus:
+    drop: 'true'
+  fldstreng_bl:
+    drop: 'true'
+clinical:
+  ravlt_learning_bl:
+      nullHandling: 'mean_imputation'
+      fieldType: 'integer'
+  ravlt_learning:
+    drop: 'true'
+    fieldType: 'integer'
+  mpacctrailsb_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  mpacctrailsb:
+    drop: 'true'
+  adas13_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  adas13:
+    drop: 'true'
+  ravlt_immediate_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+  ravlt_immediate:
+    drop: 'true'
+  ecogptlang_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogptlang:
+    drop: 'true'
+  ecogptmem_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogptmem:
+    drop: 'true'
+  moca_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+  moca:
+    drop: 'true'
+  ecogspvisspat_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogspvisspat:
+    drop: 'true'
+  ecogptvisspat:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  adasQ4_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+  adasQ4:
+    drop: 'true'
+  ecogsptotal_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogsptotal:
+    drop: 'true'
+  ecogptplan_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogptplan:
+    drop: 'true'
+  adas11_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  adas11:
+    drop: 'true'
+  faq_bl:
+    nullHandling: 'mean_imputation'
+  mmse_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+  mmse:
+    drop: 'true'
+  ravlt_forgetting:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+  mpaccdigit_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  mpaccdigit:
+    drop: 'true'
+  ecogpttotal_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogpttotal:
+    drop: 'true'
+  ecogptdivatt_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogptdivatt:
+    drop: 'true'
+  ldeltotal_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'integer'
+  ldeltotal:
+    drop: 'true'
+  ecogsplang_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogsplang:
+    drop: 'true'
+  ecogspmem_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogspmem:
+    drop: 'true'
+  ecogspdivatt:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  trabscor_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  trabscor:
+    drop: 'true'
+  ecogptorgan_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogptorgan:
+    drop: 'true'
+  ecogspplan_bl:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogspplan:
+    drop: 'true'
+  ravlt_perc_forgetting:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'
+  ecogsporgan:
+    nullHandling: 'mean_imputation'
+    fieldType: 'float'

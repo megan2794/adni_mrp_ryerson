@@ -1,0 +1,105 @@
+
+Hybrid_Pipeline_2:
+  feature_selection: ['rf','univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'svc_1']
+  n_components: ['37', '8', '37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+Hybrid_Pipeline_2A:
+  feature_selection: ['rf','univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'nb_1']
+  n_components: ['37', '8', '37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+Hybrid_Pipeline_2B:
+  feature_selection: ['rf','univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'imaging', 'non_imaging']
+  classifiers: ['dl_1', 'knn_1', 'xgb_1']
+  n_components: ['37', '8', '37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+Hybrid_Pipeline_2C:
+  feature_selection: ['rf','univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'imaging', 'non_imaging', 'imaging']
+  classifiers: ['dl_1', 'knn_1', 'xgb_1','svc_1']
+  n_components: ['37', '8', '37','8']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+Hybrid_Pipeline_2D:
+  feature_selection: ['rf','univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'imaging', 'non_imaging', 'mri']
+  classifiers: ['dl_1', 'xgb_1', 'svc_1','knn_1']
+  n_components: ['37', '8', '37','6']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+Hybrid_Pipeline_2E:
+  feature_selection: ['rf','univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'fluid', 'non_imaging', 'mri']
+  classifiers: ['dl_1', 'xgb_1', 'svc_1','knn_1']
+  n_components: ['37', '3', '37','6']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+Hybrid_Pipeline_2F:
+  feature_selection: ['rf','univariate', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'fluid', 'non_imaging', 'mri']
+  classifiers: ['dl_1', 'xgb_1', 'svc_1','nb_1']
+  n_components: ['37', '3', '37','6']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'

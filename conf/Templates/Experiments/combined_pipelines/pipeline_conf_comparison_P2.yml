@@ -1,0 +1,97 @@
+---
+# Pipeline 2: Features Grouped by Imaging and Non-Imaging
+# Deep Learning
+P2_DL_70:
+  feature_selection: ['none', 'rf']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2']
+  n_components: ['9', '37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+P2_DL_80:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['dl_1']
+  n_components: ['37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# Traditional
+P2_Traditional_70:
+  feature_selection: ['rf', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging']
+  classifiers: ['knn_1', 'knn_2']
+  n_components: ['8', '37']
+  folds: '3'
+P2_Traditional_80:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['knn_1']
+  n_components: ['37']
+  folds: '3'
+# Hybrid
+P2_Hybrid_70:
+  feature_selection: ['none', 'rf', 'rf', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['imaging', 'non_imaging', 'imaging', 'non_imaging']
+  classifiers: ['dl_1', 'dl_2', 'knn_1', 'knn_2']
+  n_components: ['9', '37', '8', '37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+P2_Hybrid_80:
+  feature_selection: ['univariate', 'rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'non_imaging']
+  classifiers: ['knn_1', 'dl_1']
+  n_components: ['37', '37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# Top Individual Classifiers
+P2_DL_TOP:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['dl_1']
+  n_components: ['37']
+  layers: [['64','tanh'],['64','tanh'],['5','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+P2_Traditional_TOP:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['knn_1']
+  n_components: ['37']
+  folds: '3'

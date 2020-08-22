@@ -1,0 +1,48 @@
+
+Traditional_Pipeline_1:
+  feature_selection: ['univariate','univariate','univariate']
+  data_split: 'k-fold'
+  data_list: ['full_data', 'imaging', 'non_imaging']
+  classifiers: ['knn_1', 'xgb_1', 'svc_1']
+  n_components: ['46','8', '37']
+  folds: '3'
+
+Hybrid_Pipeline_2:
+  feature_selection: ['rf','univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['non_imaging', 'imaging', 'non_imaging']
+  classifiers: ['dl_1', 'xgb_1', 'svc_1']
+  n_components: ['37', '8', '37']
+  layers: [['64','tanh'],['64','tanh'],['3','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+
+# Compare results with TOP individual traditional classifiers
+FULLDATA_KNN:
+  feature_selection: ['ig']
+  data_split: 'k-fold'
+  data_list: ['full_data']
+  classifiers: ['knn_1']
+  n_components: ['46']
+  folds: '3'
+
+# Compare results with TOP individual DL classifiers
+NONIMAGING_DL:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['non_imaging']
+  classifiers: ['dl_1']
+  n_components: ['37']
+  layers: [['64','tanh'],['64','tanh'],['3','softmax']]
+  dropouts: ['0', '0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adam'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'

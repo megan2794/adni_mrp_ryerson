@@ -1,0 +1,112 @@
+---
+# Pipeline 1: Features Trained Independently
+# Deep Learning
+P1_DL_ALL:
+  feature_selection: ['none', 'none', 'relieff', 'rf', 'none']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5']
+  n_components: ['7', '2', '3', '27', '6']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# Traditional
+P1_Traditional_ALL:
+  feature_selection: ['univariate', 'none', 'rf', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  n_components: ['6', '2', '3', '27', '5']
+  folds: '3'
+P1_Traditional_60:
+  feature_selection: ['univariate', 'none', 'rf', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical']
+  classifiers: ['knn_1', 'knn_2', 'knn_3', 'knn_4']
+  n_components: ['6', '2', '3', '27']
+  folds: '3'
+P1_Traditional_70:
+  feature_selection: ['univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'clinical']
+  classifiers: ['knn_1', 'knn_2']
+  n_components: ['6', '27']
+  folds: '3'
+# Hybrid
+#Pipeline1_Hybrid:
+P1_Hybrid_ALL:
+  feature_selection: ['none', 'none', 'relieff', 'rf', 'none', 'univariate', 'none', 'rf', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['mri', 'pet', 'fluid', 'clinical', 'sociodemographic', 'mri', 'pet', 'fluid', 'clinical', 'sociodemographic']
+  classifiers: ['dl_1', 'dl_2', 'dl_3', 'dl_4', 'dl_5', 'knn_1', 'knn_2', 'knn_3', 'knn_4', 'knn_5']
+  n_components: ['7', '2', '3', '27', '6', '6', '2', '3', '27', '5']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_60:
+  feature_selection: ['rf', 'univariate', 'none', 'rf', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['clinical', 'mri', 'pet', 'fluid', 'clinical']
+  classifiers: ['dl_1', 'knn_1', 'knn_2', 'knn_3', 'knn_4']
+  n_components: ['27', '6', '2', '3', '27']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+P1_Hybrid_70:
+  feature_selection: ['rf', 'univariate', 'univariate']
+  data_split: 'k-fold'
+  data_list: ['clinical', 'mri', 'clinical']
+  classifiers: ['dl_1', 'knn_1', 'knn_2']
+  n_components: ['27', '6', '27']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+# Top Individual Classifiers
+DL_TOP:
+  feature_selection: ['rf']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['dl_1']
+  n_components: ['27']
+  layers: [['32','tanh'],['5','softmax']]
+  dropouts: ['0', '0']
+  loss: 'categorical_crossentropy'
+  accuracy: 'categorical_accuracy'
+  opt: 'adagrad'
+  epochs: '40'
+  batch_size: '32'
+  folds: '3'
+Traditional_TOP_MRI:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['mri']
+  classifiers: ['knn_1']
+  n_components: ['6']
+  folds: '3'
+Traditional_TOP_Clinical:
+  feature_selection: ['univariate']
+  data_split: 'k-fold'
+  data_list: ['clinical']
+  classifiers: ['knn_1']
+  n_components: ['27']
+  folds: '3'
