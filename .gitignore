@@ -1,0 +1,5 @@
+.idea/
+data/raw/
+*.pyc
+notebooks/.ipynb_checkpoints/
+notebooks/
