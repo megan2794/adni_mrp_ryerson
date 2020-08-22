@@ -96,7 +96,7 @@ class Pipeline(object):
                 x_test_list.append(x_test)
                 y_test_list.append(y_test)
 
-                class_weight = compute_class_weight('balanced', np.arange(3), y_train)
+                class_weight = compute_class_weight('balanced', np.arange(5), y_train)
                 class_weight = dict(enumerate(class_weight))
                 model_list.append(model.build(classifier, dim, class_weight)[0])
 

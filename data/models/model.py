@@ -40,8 +40,8 @@ class Model(object):
         true_negative = (cnf_matrix.sum() - (false_positive + false_negative + true_positive)).astype(float)
 
 
-        y = to_categorical(y, num_classes=3)
-        y_pred = to_categorical(y_pred, num_classes=3)
+        y = to_categorical(y, num_classes=5)
+        y_pred = to_categorical(y_pred, num_classes=5)
 
         auc = AUC()
         _ = auc.update_state(y, y_pred)
@@ -119,7 +119,7 @@ class DeepLearningModel(Model):
     def train(self, x_train, y_train, class_weight):
         #class_weight = compute_class_weight('balanced', np.arange(5), y_train)
         #class_weight = dict(enumerate(class_weight))
-        y_train = to_categorical(y_train, num_classes=3)
+        y_train = to_categorical(y_train, num_classes=5)
         #x_train = x_train.reshape(x_train.shape[0], x_train.shape[1], 1)
 
         #print(class_weight)

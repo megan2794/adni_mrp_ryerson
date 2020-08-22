@@ -30,8 +30,8 @@ class Load:
         #                     .when(F.col('DX') == 'SMC', 1).when(F.col('DX') == 'EMCI', 2)
         #                     .when(F.col('DX') == 'LMCI', 3).when(F.col('DX') == 'AD', 4))
         return study_df_final.withColumn('DX', F.when(F.col('DX') == 'CN', 0)
-                                   .when(F.col('DX') == 'SMC', 0).when(F.col('DX') == 'EMCI', 1)
-                                   .when(F.col('DX') == 'LMCI', 1).when(F.col('DX') == 'AD', 2))
+                                   .when(F.col('DX') == 'SMC', 1).when(F.col('DX') == 'EMCI', 2)
+                                   .when(F.col('DX') == 'LMCI', 3).when(F.col('DX') == 'AD', 4))
 
     def get_feature_definitions(self):
 
